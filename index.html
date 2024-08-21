@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font style -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- Tailwind customize color cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary-button": "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <!-- header section -->
+    <header class="lg:container mx-auto mt-9">
+      <!-- navigation -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="lg:text-4xl text-3xl font-bold">Bike Dekho</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-5 font-medium">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <a class="btn bg-bike-primary-button text-white px-10 text-xl"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div>
+        <!-- slider container/carousel -->
+        <div class="carousel w-full bg-[#e76f5125] mt-10 rounded-md">
+          <!-- slide one -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="lg:flex lg:p-28 p-8">
+              <!-- text content -->
+              <div class="flex-1 space-y-7 mb-8">
+                <div class="font-bold lg:text-6xl text-4xl space-y-4">
+                  <h2>OLA Roadster Pro</h2>
+                  <h2>52,000 W</h2>
+                </div>
+                <p class="font-light leading-7 lg:w-4/5">We help you calculate fuel expenses which you will incur by using OLA Roadster Pro. To check your monthly fuel expenses you just have to enter distance in kms you travel in a day</p>
+                <div class="text-center lg:text-left">
+                  <button class="bg-bike-primary-button text-white font-semibold text-xl px-7 py-4 rounded-md">Purchase</button> 
+                </div> 
+              </div>
+              <!-- image content -->
+              <div class="flex-1">
+                <img src="./images/slider/bike1.png"/>
+              </div>
+            </div>
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide two -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="lg:flex lg:p-28 p-8">
+              <!-- text content -->
+              <div class="flex-1 space-y-7">
+                <div class="font-bold lg:text-6xl text-4xl space-y-4">
+                  <h2>Royal Enfield Hunter 350</h2>
+                  <h2>5 Speed Manual</h2>
+                </div>
+                <p class="font-light leading-7 lg:w-4/5">The Hunter 350 is one good looking motorcycle. It gets an engine that churns out good performance but its stiff ride quality makes it little bothersome.</p>
+                <div class="text-center lg:text-left">
+                  <button class="bg-bike-primary-button text-white font-semibold text-xl px-7 py-4 rounded-md">Purchase</button> 
+                </div> 
+              </div>
+              <!-- image content -->
+              <div class="flex-1">
+                <img src="./images/slider/bike2.png"/>
+              </div>
+            </div>
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide three -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="lg:flex lg:p-28 p-8">
+              <!-- text content -->
+              <div class="flex-1 space-y-7">
+                <div class="font-bold lg:text-6xl text-4xl space-y-4">
+                  <h2>Yamaha R15 V4</h2>
+                  <h2>6 Speed Manual</h2>
+                </div>
+                <p class="font-light leading-7 w-4/5">The Yamaha R15 V4 is one fantastic looking motorcycle. It is loaded with lots of features this time around, and with the styling inspired from the R7.</p>
+                <div class="text-center lg:text-left">
+                  <button class="bg-bike-primary-button text-white font-semibold text-xl px-7 py-4 rounded-md">Purchase</button> 
+                </div>   
+              </div>
+              <!-- image content -->
+              <div class="flex-1">
+                <img src="./images/slider/bike3.png"/>
+              </div>
+            </div>
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide four -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="lg:flex lg:p-28 p-8">
+              <!-- text content -->
+              <div class="flex-1 space-y-7">
+                <div class="font-bold lg:text-6xl text-4xl space-y-4">
+                  <h2>BSA Gold Star</h2>
+                  <h2>Double Disc</h2>
+                </div>
+                <p class="font-light leading-7 w-4/5">The BSA Gold Star 650 marks the revival of the brand in India. It’s a retro-styled, 650cc single-cylinder bike with minimal features.</p>
+                <div class="text-center lg:text-left">
+                  <button class="bg-bike-primary-button text-white font-semibold text-xl px-7 py-4 rounded-md">Purchase</button> 
+                </div>   
+              </div>
+              <!-- image content -->
+              <div class="flex-1">
+                <img src="./images/slider/bike4.png"/>
+              </div>
+            </div>
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- Featured bikes section  -->
+       <section class="lg:container mx-auto lg:mt-36 mt-20 max-w-[380px]">
+        <!-- title and subtitle -->
+        <div class="text-center mb-14">
+          <h3 class="font-semibold lg:text-5xl text-4xl mb-4">Featured Bikes In This Year</h3>
+          <p class="font-semibold text-bike-primary-button text-sm mb-1">Best bike collection</p>
+          <div class="w-14 h-0.5 bg-bike-primary-button mx-auto"></div>
+        </div>
+        <!-- image container -->
+         <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-32 gap-20">
+          <img class="grayscale mx-auto" src="./images/others/feature-bike.png" alt="">
+          <img class="mx-auto" src="./images/others/feature-bike.png" alt="">
+          <img class="grayscale mx-auto" src="./images/others/feature-bike.png" alt="">
+         </div>
+       </section>
+       <!-- latest news section -->
+        <section class="lg:container mx-auto lg:mt-36 mt-20 max-w-[380px]">
+          <h3 class="font-semibold lg:text-5xl text-4xl text-[#0A0826] text-center mb-12">latest News</h3>
+          <!-- cards -->
+           <div class="grid lg:grid-cols-3 grid-cols-1 gap-10">
+            <!-- card 1 -->
+            <div class="card bg-base-100 border border-[#6c6c6c25] shadow-lg pt-5">
+              <figure>
+                <img
+                  src="./images/others/latest1.png"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl">Yamaha MT 15 V2</h2>
+                <p class="text-[#6C6C6C] leading-7 mb-8">The Yamaha MT15 is an entry-level streetfighter based on the R15. The naked bike looks quite sharp.</p>
+                <div class="card-actions justify-start">
+                  <button class="bg-bike-primary-button text-white font-medium px-5 py-3 rounded-lg">Read More</button>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card bg-base-100 border border-[#6c6c6c25] shadow-lg pt-5">
+              <figure>
+                <img
+                  src="./images/others/latest2.png"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl">Royal Enfield Classic 350</h2>
+                <p class="text-[#6C6C6C] leading-7 mb-8">The Royal Enfield Classic 350 is the second bike under the "J-series" platform. Its timelessly ‘classic’ design.</p>
+                <div class="card-actions justify-start">
+                  <button class="text-bike-primary-button border border-2 border-bike-primary-button font-medium px-5 py-3 rounded-lg">Read More</button>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card bg-base-100  border border-[#6c6c6c25] shadow-lg pt-5">
+              <figure>
+                <img
+                  src="./images/others/latest3.png"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl">honda h'ness cb 350</h2>
+                <p class="text-[#6C6C6C] leading-7 mb-8">The roar. The might. The rush. All over again. Your Highness is all set to roar into a greener future.</p>
+                <div class="card-actions justify-start">
+                  <button class="text-bike-primary-button border border-2 border-bike-primary-button font-medium px-5 py-3 rounded-lg">Read More</button>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+        <!-- happy client section -->
+         <section class="lg:container mx-auto lg:mt-36 mt-20 max-w-[380px]">
+          <h3 class="font-semibold lg:text-5xl text-4xl mb-12 text-center">
+            <span class="text-[#0A0826]">Happy</span> 
+            <span class="text-bike-primary-button">Clients says</span>
+          </h3>
+          <!-- cards -->
+           <div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
+            <!-- card 1 -->
+            <div class="card bg-base-100 border border-[#6c6c6c25] shadow-sm">
+              <div class="avatar w-32 rounded-full mx-auto mt-10">
+                <img src="./images/others/user-1.png" />
+              </div>
+              <div class="card-body items-center text-center">
+                <p class="text-[#6C6C6C] mb-2">I’ve never felt more freedom on the road! This motorbike is a game-changer. Reliable, powerful, and sleek. It’s everything I wanted in a bike."</p>
+                <div class="rating mb-3">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked"/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                </div>
+                <h6 class="text-[#23A6F0] text-sm font-semibold mb-2">David Miles</h6>
+                <h6 class="text-sm font-semibold text-[#252B42]">Banker</h6>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card bg-base-100 border border-[#6c6c6c25] shadow-sm">
+              <div class="avatar w-32 rounded-full mx-auto mt-10">
+                <img src="./images/others/user-2.png" />
+              </div>
+              <div class="card-body items-center text-center">
+                <p class="text-[#6C6C6C] mb-2">The performance is unmatched. I’m thrilled every time I ride! A perfect blend of style and functionality. My go-to for every adventure.</p>
+                <div class="rating mb-3">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked"/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                </div>
+                <h6 class="text-[#23A6F0] text-sm font-semibold mb-2">Jeciya Ramn</h6>
+                <h6 class="text-sm font-semibold text-[#252B42]">Software Engineer</h6>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card bg-base-100 border border-[#6c6c6c25] shadow-sm">
+              <div class="avatar w-32 rounded-full mx-auto mt-10">
+                <img src="./images/others/user-3.png" />
+              </div>
+              <div class="card-body items-center text-center">
+                <p class="text-[#6C6C6C] mb-2"> Riding this bike is pure joy. It’s smooth, fast, and incredibly comfortable. The design is stunning, and the ride quality is even better.</p>
+                <div class="rating mb-3">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked"/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                </div>
+                <h6 class="text-[#23A6F0] text-sm font-semibold mb-2">Retina Khon</h6>
+                <h6 class="text-sm font-semibold text-[#252B42]">Blogger</h6>
+              </div>
+            </div>
+           </div>
+         </section>
+         <!-- Frequently Asked section -->
+          <section class="lg:container mx-auto lg:mt-36 mt-20 max-w-[380px]">
+            <h3 class="font-semibold lg:text-5xl text-4xl mb-12 text-center">
+              <span class="text-[#0A0826]">Frequently Asked</span> 
+              <span class="text-bike-primary-button">Questions</span>
+            </h3>
+            <div class="hero">
+              <div class="hero-content flex-col lg:flex-row lg:gap-24 gap-10">
+                <img
+                  src="./images/others/faq.png"
+                  class="lg:max-w-sm max-w-xs" />
+                <div class="space-y-3">
+                  <!-- question 1 -->
+                  <div class="collapse collapse-arrow border border-[#D5E5FB]">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium text-[#383838]">What are the most important things I should know about riding a bike?</div>
+                    <div class="collapse-content">
+                      <p class="text-[#7E848C]">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                    </div>
+                  </div>
+                  <!-- question 2 -->
+                  <div class="collapse collapse-arrow border border-[#D5E5FB]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium text-[#383838]">How can I tell if my helmet is old and I need a new one?</div>
+                    <div class="collapse-content">
+                      <p class="text-[#7E848C]">If helmet shows visible wear like cracks, fading, or loose padding, it's time for a replacement.Helmets should be replaced every 5-7 years, or sooner if they’ve been involved in an impact, even if they look fine.</p>
+                    </div>
+                  </div>
+                  <!-- question 3 -->
+                  <div class="collapse collapse-arrow border border-[#D5E5FB]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium text-[#383838]">My bike has been in storage is it safe to ride?</div>
+                    <div class="collapse-content">
+                      <p class="text-[#7E848C]">After storage, check your bike’s tires, brakes, and fluids for any signs of wear or damage before riding. It’s essential to inspect and possibly service your bike after long-term storage to ensure it’s safe and road-ready.</p>
+                    </div>
+                  </div>
+                  <!-- question 4 -->
+                  <div class="collapse collapse-arrow border border-[#D5E5FB]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium text-[#383838]">What rules should I follow when riding my bike?</div>
+                    <div class="collapse-content">
+                      <p class="text-[#7E848C]">Always wear protective gear, obey traffic laws, and stay visible to other drivers for a safe ride. Ride defensively, maintain a safe distance, and be mindful of road conditions to prevent accidents.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <!-- footer section -->
+    <footer class="footer bg-[#0B0D17] text-white lg:px-32 px-10 py-16 mt-20 lg:flex justify-between">
+      <aside class="lg:space-y-2 space-y-1">
+        <ul class="flex gap-6">
+          <li>Download Now</li>
+          <li>License</li>
+        </ul>
+        <ul class="flex lg:gap-6 gap-2 flex-wrap">
+          <li>About</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Careers</li>
+          <li>Help</li>
+          <li>Privacy Policy</li>
+        </ul>
+        <p class="text-[#D9DBE1] text-sm">© 2020 bike. All rights reserved</p>
+      </aside>
+      <nav class="">
+        <div>
+          <h6 class="footer-title text-lg font-medium text-[#D9DBE1]">Get the App</h6>
+        <div class="grid grid-col-1 gap-4">
+          <a>
+            <img class="w-36" src="./images/others/ios.png" alt="">
+          </a>
+          <a>
+            <img class="w-36" src="./images/others/android.png" alt="">
+          </a>
+        </div>
+        </div>
+      </nav>
+    </footer>
+</html>
